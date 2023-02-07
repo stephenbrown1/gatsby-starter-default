@@ -15,6 +15,19 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`@pauliescanlon/gatsby-remark-sticky-table`],
+      },
+    },
+    {
+     resolve: `@pauliescanlon/gatsby-remark-sticky-table`,
+     options: {
+      height: 250,
+      backgroundColor: "#ffffff",
+     },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

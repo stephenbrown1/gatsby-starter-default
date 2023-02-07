@@ -109,6 +109,11 @@ const IndexPage = () => (
         </li>
       ))}
     </ul>
+    
+| Head one | Head two | Head three |
+| -------- | ---------| ---------- |
+| cell one | cell two | cell three |
+
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}${utmParameters}`}>{link.text}</a>
